@@ -1,16 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+@font-face{
+  font-family: "dm";
+  font-weight: 400;
+  src: url("../public/fonts/DMSerifDisplay-Regular.ttf");
 }
 
-* {
-  box-sizing: border-box;
+@font-face{
+  font-family: "karla";
+  font-weight: 700;
+  src: url("../public/fonts/Karla-Bold.ttf");
+}
+
+@font-face{
+  font-family: "karla";
+  font-weight: 400;
+  src: url("../public/fonts/Karla-Regular.ttf");
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: "karla";
+  font-weight: 400;
+}
+
+h1,h2,h3,h4{
+  font-family: "dm";
+  font-weight: 400;
+}
+
+h1{
+  font-size: 4rem;
+  color:hsl(270, 9%, 17%);
+  margin: 45px 0 90px 0;
+}
+
+h2{  
+  font-size: 3.8rem;
+}
+
+h3{
+  font-size: 3rem;
+  margin-bottom:48px;
+  width: 45%;
+}
+
+h4{
+  font-size: 2.5rem;
+  color:hsl(270, 9%, 17%);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 150%;
+  margin: 0;
+}
+
+
+@media only screen and (max-width:480px){
+
+  h1{
+    text-align: center;
+  }
+
+  h1,h2,h3{
+    width: 100%;
+  }
+
+  h4{
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  p{
+    font-size: 1.3rem;
+  }
 }

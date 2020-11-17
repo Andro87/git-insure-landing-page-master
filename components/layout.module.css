@@ -1,0 +1,114 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    padding: 0 95px; 
+}
+
+.intro{
+    color: hsl(0, 0%, 98%);
+    padding: 0 0 98px  100px;
+    background: hsl(256, 26%, 20%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: url("../public/images/bg-pattern-intro-right-desktop.svg");
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.intro::after{
+    content:  url("../public/images/bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    bottom: -80%;
+    left: 0; 
+}
+
+
+.intro h2{
+    width: 38%;
+}
+
+.intro p{
+    width: 50%;
+}
+
+.work{
+    color: hsl(273, 4%, 51%);
+    padding: 0;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 98%);;
+    padding: 0 45px;  /**/
+    margin: 0 95px 85px 95px;    
+    background:url("../public/images/bg-pattern-how-we-work-desktop.svg") top right, hsl(256, 26%, 20%); 
+    background-repeat: no-repeat; 
+}
+
+
+.footer{
+    color: hsl(270, 9%, 17%);
+    font-family: "karla";
+    font-weight: 700;
+    margin-top: 45px;
+    padding-left: 0;
+}
+
+
+
+
+
+@media only screen and (max-width:480px) {
+
+    .layout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .intro{
+        background:   url("../public/images/bg-pattern-intro-left-mobile.svg"), hsl(256, 26%, 20%);
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+    }
+
+    .intro::after{
+        display: none;
+    }
+    
+    .intro::before{
+        content:  url("../public/images/bg-pattern-intro-right-mobile.svg"); 
+        position: absolute;
+        bottom: -190%;
+    }
+
+    .intro h2{
+        width: 100%;
+    }
+
+    .intro p{
+        width: 100%;
+    }
+
+    .work{
+        margin-bottom: 65px;
+        padding: 25px;   
+    }
+
+    .details{
+        display: block;
+        padding: 40px 45px 85px 45px;
+        margin: 100px 25px 145px 25px;
+        background:url("../public/images/bg-pattern-how-we-work-mobile.svg") top right, hsl(256, 26%, 20%); 
+        background-repeat: no-repeat;
+    }
+}
